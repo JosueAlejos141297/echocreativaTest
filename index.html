@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Creativa IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Estilos de fuente y desplazamiento */
+        body {
+            font-family: 'Lato', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Definición de la paleta de colores */
+        .color-17afa1 { color: #17AFA1; }
+        .color-431a60 { color: #431A60; }
+        .color-796489 { color: #796489; }
+        .color-de1a80 { color: #DE1A80; }
+        .color-cccacd { color: #CCCACD; }
+        .bg-17afa1 { background-color: #17AFA1; }
+        .bg-431a60 { background-color: #431A60; }
+        .bg-796489 { background-color: #796489; }
+        .bg-de1a80 { background-color: #DE1A80; }
+        .bg-cccacd { background-color: #CCCACD; }
+        
+        /* Gradiente personalizado para la portada */
+        .bg-gradient-echo {
+            background-image: linear-gradient(135deg, #431A60 0%, #DE1A80 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Menú de Navegación -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg p-4">
+        <ul class="flex justify-center space-x-6">
+            <li><a href="#portada" class="text-gray-600 hover:color-431a60 font-semibold transition-colors duration-300">Inicio</a></li>
+            <li><a href="#quienes-somos" class="text-gray-600 hover:color-431a60 font-semibold transition-colors duration-300">Nosotros</a></li>
+            <li><a href="#diferenciales" class="text-gray-600 hover:color-431a60 font-semibold transition-colors duration-300">Diferenciales</a></li>
+        </ul>
+    </nav>
+
+    <!-- Página 1 - Portada -->
+    <section id="portada" class="relative min-h-screen flex flex-col justify-center items-center overflow-hidden p-6">
+        <!-- Franja diagonal con degradado -->
+        <div class="absolute bottom-0 right-0 w-2/3 h-1/2 -rotate-12 transform origin-bottom-right bg-gradient-echo rounded-tl-[200px] z-0"></div>
+
+        <div class="relative z-10 text-center flex flex-col items-center">
+            <!-- Título de la marca -->
+            <div class="mb-4">
+                <h1 class="font-poppins text-7xl font-bold color-431a60">Echo<span class="color-de1a80">Creativa</span></h1>
+                <p class="text-lg color-796489 mt-2">IA</p>
+            </div>
+            
+            <!-- Eslogan -->
+            <p class="font-poppins text-lg color-431a60 max-w-lg mx-auto mt-4">Un eco creativo que transforma</p>
+
+            <!-- Datos de contacto -->
+            <div class="mt-8 flex items-center space-x-6 text-gray-600 font-lato">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-globe text-sm color-796489"></i>
+                    <span class="color-796489">www.echocreativa.com.mx</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-mobile-alt text-sm color-796489"></i>
+                    <span class="color-796489">55 2501 7370</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-envelope text-sm color-796489"></i>
+                    <span class="color-796489">info@echocreativa.com.mx</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Página 2 - Quiénes somos + Servicios -->
+    <section id="quienes-somos" class="min-h-screen p-8 lg:p-16 flex flex-col justify-center bg-gray-50">
+        <div class="max-w-4xl mx-auto w-full">
+            <!-- Sección Quiénes somos -->
+            <div class="mb-12">
+                <div class="bg-17afa1 rounded-lg p-6 mb-4">
+                    <h2 class="font-poppins text-white text-3xl font-bold">Quiénes somos</h2>
+                </div>
+                <hr class="border-t-2 border-de1a80 w-16 mb-6">
+                <p class="color-431a60 font-lato leading-relaxed">
+                    Sabemos lo difícil que es iniciar un negocio, por eso ponemos a tu alcance herramientas digitales que impulsan tu crecimiento. Nuestro propósito es claro: queremos que tu emprendimiento sea visible para todos.
+                </p>
+            </div>
+
+            <!-- Sección de Servicios -->
+            <div>
+                <h2 class="font-poppins text-2xl font-bold color-431a60 mb-6">Servicios</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Servicio 1 -->
+                    <div class="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
+                        <i class="fas fa-laptop-code color-17afa1 text-3xl"></i>
+                        <p class="color-431a60 font-lato font-semibold">Desarrollo Web y Tiendas en línea</p>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
+                        <i class="fas fa-bullhorn color-17afa1 text-3xl"></i>
+                        <p class="color-431a60 font-lato font-semibold">Marketing Digital y Redes Sociales</p>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
+                        <i class="fas fa-search-dollar color-17afa1 text-3xl"></i>
+                        <p class="color-431a60 font-lato font-semibold">SEO & SEM</p>
+                    </div>
+                    <!-- Servicio 4 -->
+                    <div class="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
+                        <i class="fab fa-google color-17afa1 text-3xl"></i>
+                        <p class="color-431a60 font-lato font-semibold">Perfil de Negocio en Google</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Página 3 - Diferenciales + Contacto -->
+    <section id="diferenciales" class="min-h-screen p-8 lg:p-16 flex flex-col justify-center">
+        <div class="max-w-4xl mx-auto w-full">
+            <!-- Sección Diferenciales -->
+            <div class="mb-12">
+                <h2 class="font-poppins color-431a60 text-3xl font-bold mb-4">¿Por qué elegirnos?</h2>
+                <ul class="space-y-4 color-431a60">
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle color-de1a80 text-2xl"></i>
+                        <span class="font-lato">Más de 3 años de experiencia</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle color-de1a80 text-2xl"></i>
+                        <span class="font-lato">Resultados medibles</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle color-de1a80 text-2xl"></i>
+                        <span class="font-lato">Especialistas en pymes y emprendedores</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle color-de1a80 text-2xl"></i>
+                        <span class="font-lato">Soporte y acompañamiento constante</span>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="border-t-2 border-de1a80 w-16 mb-12">
+
+            <!-- Sección Contacto y formulario -->
+            <div class="mb-12">
+                <h2 class="font-poppins text-2xl font-bold color-431a60 mb-6">Contáctanos</h2>
+                <div class="grid md:grid-cols-2 gap-8 text-center">
+                    <!-- Website -->
+                    <a href="https://www.echocreativa.com.mx" target="_blank" class="bg-cccacd p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center space-y-2">
+                        <i class="fas fa-globe color-431a60 text-4xl mb-2"></i>
+                        <span class="font-semibold color-431a60">www.echocreativa.com.mx</span>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto:info@echocreativa.com.mx" class="bg-cccacd p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center space-y-2">
+                        <i class="fas fa-envelope color-431a60 text-4xl mb-2"></i>
+                        <span class="font-semibold color-431a60">info@echocreativa.com.mx</span>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/525525017370" target="_blank" class="bg-cccacd p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center space-y-2">
+                        <i class="fab fa-whatsapp color-431a60 text-4xl mb-2"></i>
+                        <span class="font-semibold color-431a60">WhatsApp: 55 2501 7370</span>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/echocreativa" target="_blank" class="bg-cccacd p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center space-y-2">
+                        <i class="fab fa-facebook color-431a60 text-4xl mb-2"></i>
+                        <span class="font-semibold color-431a60">@echocreativa</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="bg-gray-100 p-8 rounded-lg shadow-md max-w-md mx-auto">
+                <h3 class="font-poppins text-xl font-bold color-431a60 mb-4 text-center">Envíanos un mensaje</h3>
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Tu Nombre" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-17afa1" required>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Tu Email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-17afa1" required>
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="4" placeholder="Tu Mensaje" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-17afa1" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-de1a80 text-white font-bold py-3 rounded-md hover:bg-opacity-90 transition-colors duration-300">
+                        Enviar
+                    </button>
+                </form>
+                <div id="form-message" class="mt-4 text-center hidden font-semibold"></div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-8">
+                <p class="font-poppins font-bold text-lg color-431a60">
+                    Un eco creativo que transforma
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.textContent = '¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.';
+            messageDiv.className = 'mt-4 text-center font-semibold text-green-600';
+            
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
